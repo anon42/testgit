@@ -1,0 +1,134 @@
+#title
+{
+/*	font-weight: bold;
+	font-size: 17px;
+	display: block;
+	padding: 16px 0 0 60px;
+*/
+}
+
+#aboutImage .progressBar, #logoProgressBar, #aboutImage .spinner, #aboutImage .delete, #aboutImage .delete a
+{
+	position: absolute;	
+}
+
+#aboutImage .delete
+{
+	width: 290px;
+	height: 162px;
+	background: url(../images/overlay.png);
+	top: 0;
+	display: none;
+}
+
+#aboutImage .delete > a
+{
+	width: 25px;
+	height: 25px;
+	background: url(../images/delete.png);
+	right: 5px;
+	top: 5px;
+}
+
+#aboutImage .progressBar
+{
+	width: 80px;
+	height: 8px;
+	position: relative;
+	top: 113px;
+	left: 110px;
+}
+
+#logoProgressBar
+{
+	width: 40px;
+	height: 4px;
+	top: 60px;
+	left: 70px;
+}
+
+#description
+{
+	font-size: 13px;
+	display: block;
+	width: 235px;
+	padding: 10px 10px 0 10px;
+}
+
+#aboutImage, #aboutImage .image
+{
+	width: 290px;
+	height: 162px;	
+}
+
+#aboutImage
+{
+	background: url(../images/dropBackground.png);
+	margin-left: 4px;
+	display: block;
+	position: relative;
+}
+
+#aboutImage > form.upload,
+.promotionDetails form.upload
+{
+	position: relative;
+	display: block;
+}
+
+#aboutImage > form.upload > label,
+.promotionDetails form.upload > label
+{
+	position: absolute;
+	width: 256px;
+	height: 141px;
+	left: 11px;
+	top: 3px;
+}
+
+#aboutImage > form.upload > label > input,
+.promotionDetails form.upload > label > input
+{
+	-moz-transform: translate(-310px, 0pt) scale(4);
+	transform: translate(-285px, 0pt) scale(4);
+	margin-top: 50px;
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	opacity: 0;
+}
+
+#image
+{
+	overflow: hidden;
+	width: 290px;
+	height: 162px;
+	display: none;
+	position: absolute;
+	top: 0;
+}
+
+#image > img
+{
+	width: 290px;
+}
+
+form.titleEditable input
+{
+	font-size: 16px;
+	font-family: 'Helvetica Neue', Helvetica, serif;
+	font-weight: bold;
+	border: 0;
+	margin-top: -2px;
+	margin-left: -1px;
+}
+
+form.descriptionEditable textarea
+{
+	font-size: 13px;
+	font-family: 'Helvetica Neue', Helvetica, serif;
+	color: #666;
+	border: 0;
+	margin-top: -2px;
+	margin-left: -2px;	
+}

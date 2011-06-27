@@ -1,0 +1,395 @@
+
+div#create
+{
+	display: none;
+	height: 750px;
+}
+
+div#app-name
+{
+	z-index: 42;
+	position: absolute;	
+	top: 76px;
+	padding: 8px 0 0 10px;
+	font-size: 19px;
+	font-weight: bold;
+	right: 23px;
+	width: 197px;
+	height: 25px;
+	background: url(../images/main-bg.png);
+}
+
+
+div#theme-chooser
+{
+	z-index: 42;
+	position: absolute;	
+	top: 120px;
+	left: 630px;
+	width: 307px;
+	height: 241px;
+	background: url(../images/color-theme.png);
+}
+
+div#theme-chooser h2
+{
+	font-size: 15px;
+	padding: 15px 0 0 120px;
+}
+
+div#theme-chooser dl dt
+{
+	font-size: 17px;
+	color: white;
+	padding: 38px 0 0 155px;
+}
+
+div#theme-chooser dl dd.bar-color
+{
+	width: 153px;
+	height: 20px;
+	margin: 28px 0 0 119px;
+	padding: 23px 0 0 10px;
+	color: white;
+	text-shadow: 1px 1px 1px #333, 1px 1px 2px #333, 2px 2px 4px #333;
+}
+
+div#theme-chooser dl dd.text-color
+{
+	background: white;
+	width: 153px;
+	height: 15px;
+	margin: 1px 0 0 119px;
+	padding: 10px 0 0 10px;
+	color: white;
+	text-shadow: 1px 1px 1px #333, 1px 1px 2px #333, 2px 2px 4px #333;
+}
+
+div#theme-chooser dl dd.theme-no, div#theme-chooser dl dd.forward-theme, div#theme-chooser dl dd.backward-theme
+{
+	float: left;
+}
+
+div#theme-chooser dl dd.forward-theme a, div#theme-chooser dl dd.backward-theme a
+{
+	display: block;
+	width: 30px;
+	height: 28px;
+}
+
+div#theme-chooser dl dd.theme-no
+{
+	margin: 20px 0 0 120px;
+	color: #333;
+}
+
+div#theme-chooser dl dd.forward-theme a
+{
+	background: url(../images/forward-button.png);
+	margin: 10px 0 0 5px;
+}
+
+div#theme-chooser dl dd.backward-theme a
+{
+	background: url(../images/backward-button.png);
+	margin: 10px 0 0 10px;
+}
+
+
+div#splashscreen
+{
+	z-index: 42;
+	position: absolute;	
+	top: 380px;
+	left: 730px;
+	width: 205px;
+	height: 322px;
+	background: url(../images/splashscreen.png);
+}
+
+div#splashscreen h2
+{
+	font-size: 15px;
+	padding: 15px 0 0 20px;
+}
+
+div#splashscreen p
+{
+	padding: 17px 20px 0 20px;
+}
+
+#applicationSplashscreen
+{
+	margin: 6px 0 0 20px;
+	background: url(../images/dropBackground152.png);
+	position: relative;
+}
+
+div#applicationSplashscreen div.delete,
+div#applicationBackground div.delete
+{
+	display: none;
+	position: absolute;
+	background: url(../images/overlay.png);
+	width: 152px;
+	height: 226px;
+}
+
+div#applicationSplashscreen div.delete > a,
+div#applicationBackground div.delete > a
+{
+	display: block;
+	float: right;
+	margin: 5px 5px 0 0;
+	width: 25px;
+	height: 25px;
+	background: url(../images/delete.png);	
+}
+
+#applicationSplashscreen img
+{
+	display: none;
+}
+
+#applicationSplashscreen, #applicationSplashscreen img
+{
+	width: 152px;
+	height: 226px;
+}
+
+
+div#app-background
+{
+	z-index: 42;
+	position: absolute;	
+	top: 585px;
+	left: 573px;
+	width: 362px;
+	height: 468px;
+	background: url(../images/app-background.png);
+}
+
+div#app-background h2
+{
+	font-size: 15px;
+	padding: 155px 0 0 175px;
+}
+
+div#app-background p
+{
+	padding: 17px 20px 0 175px;
+}
+
+#applicationBackground
+{
+	margin: 9px 0 0 182px;
+	background: url(../images/dropBackground152.png);
+	position: relative;
+}
+
+#applicationBackground img
+{
+	display: none;
+}
+
+#applicationBackground, #applicationBackground img
+{
+	width: 152px;
+	height: 226px;
+}
+
+div#icon-theme
+{
+	z-index: 42;
+	position: absolute;	
+	top: 537px;
+	left: 325px;
+	width: 380px;
+	padding-bottom: 20px;
+	background: url(../images/icon-theme.png);
+}
+
+div#icon-theme h2
+{
+	padding: 360px 0 20px 20px;
+	font-size: 13px;
+	color: #333;
+	
+}
+
+div#icon-theme dl,
+div#icon-theme .top,
+div#icon-theme .bottom
+{
+	margin: 0 auto;
+	width: 355px;	
+}
+
+
+div#icon-theme dl
+{
+	width: 335px;
+	padding: 0 10px;
+	background: url(../images/modules-bg.png);
+}
+
+div#icon-theme .top
+{
+	height: 6px;
+	background: url(../images/modules-top.png);
+}
+
+div#icon-theme .bottom
+{
+	height: 14px;
+	background: url(../images/modules-bottom.png);
+}
+
+div#icon-theme dl dd
+{
+  	float: left;
+    height: 80px;
+	padding-top: 10px;
+    width: 64px;
+}
+
+div#icon-theme dl dd a
+{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 41px;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+div#icon-theme dl dd a span
+{
+	display: block;
+	margin-top: 45px;
+	text-align: center;
+	color: #333;
+}
+
+div#icon-theme dl dd input
+{
+	margin: 23px 0 0 24px;
+	display: none;
+}
+
+div#icon-theme dl#theme-1 dd input
+{
+	display: inline-block;
+}
+
+
+div#icon-theme dl dt a span.radio.selected a
+{
+	background: url(../images/radio-selected.png);
+}
+
+div#first ul
+{
+	margin-top: 30px;
+}
+
+div#first ul li
+{
+	width: 310px;
+	height: 74px;
+	margin-bottom: -16px;
+}
+
+div#first ul li > span
+{
+	display: block;
+	float: left;
+	margin: 18px 0 0 11px;
+}
+
+div#first ul li span.sq
+{
+	width: 40px;
+	height: 39px;
+}
+
+div#first ul li span.sq > span
+{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 5px 0 0 5px;
+}
+
+div#first ul li span.title
+{
+	margin-top: 28px;
+	font-size: 19px;
+	font-weight: bold;
+	width: 200px;
+}
+
+div#first ul li span.disclosure
+{
+	margin: 30px 0 0 14px;
+	width: 11px;
+	height: 16px;
+}
+
+a#publish
+{
+	display: none;
+	width: 171px;
+	height: 42px;
+	background: url(../images/publish-button.png);
+	position: absolute;
+	bottom: 100px;
+	right: 20px;
+	text-decoration: none;
+}
+
+a#publish span
+{
+	display: block;
+	margin: 14px 0 0 30px;
+	font-size: 17px;
+	color: white;
+}
+
+a.next-step
+{
+	display: block;
+	width: 126px;
+	height: 42px;
+	background: url(../images/next-step.png);
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+	text-decoration: none;
+}
+
+a.next-step.top
+{
+	top: 20px;
+}
+
+a.next-step span
+{
+	display: block;
+	width: 100px;
+	color: white;
+	text-align: center;
+	font-size: 17px;
+	padding-top: 13px;
+	cursor: pointer;
+}
+
+div#applicationSplashscreen div.progressBar, div#applicationBackground div.progressBar
+{
+	width: 40px;
+	height: 8px;
+	position: absolute;
+	top: 118px;
+	left: 55px;
+}

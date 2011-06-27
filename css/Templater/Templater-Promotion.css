@@ -1,0 +1,66 @@
+#promotion dl.item > dt
+{
+	position: relative;
+}
+
+#promotion dl.item > dt > .progressBar
+{
+	position: relative;
+	top: 53px;
+	left: 28px;
+	width: 40px;
+	height: 8px;
+}
+
+#promotion dd.editableItem form.titleEditable input
+{
+	font-size: 14px;
+}
+
+div.promotionDetails > dl.appDl > dd.file_upload
+{
+	padding-left: 4px;
+	min-height: 162px;
+	position: relative;
+	overflow: hidden;
+}
+
+div.promotionDetails > dl.appDl > dd.file_upload div.progressBar
+{
+	position: absolute;
+	top: 115px;
+	left: 120px;
+	width: 70px;
+	height: 8px;
+}
+
+div.promotionDetails > dl.appDl > dd.file_upload div.image
+{
+	height: auto;
+	display: block;
+	width: 290px;
+	overflow: hidden;
+}
+
+div.promotionDetails > dl.appDl > dd.file_upload > span.span_upload
+{
+	position: absolute;
+	top: 0;
+	background: url(../images/dropBackground.png) center top no-repeat;
+	width: 290px;
+	min-height: 162px;
+}
+
+div.promotionDetails > dl.appDl > dd.file_upload div.image img
+{
+	width: 290px;
+	height: auto;
+}
+
+div.promotionDetails dd.editable span
+{
+	display: block;
+    font-size: 13px;
+    padding: 10px 10px 0;
+    width: 235px;
+}

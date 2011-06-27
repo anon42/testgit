@@ -1,0 +1,1636 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+
+body
+{
+	line-height: 1;
+}
+
+ol, ul
+{
+	list-style: none;
+}
+
+blockquote, q
+{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
+	content: none;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+body
+{
+  	font-size: 13px;
+  	margin: 0;
+	background: white url(../images/Background.png) top left repeat-x;
+}
+#scrollContainer /* wraps #content, scrolls */
+{ 
+  overflow: auto; /* scroll! */
+  position:absolute; /* make offsetParent */
+  top: 0; height: 100%; width: 100%; /* fill parent */
+} 
+
+#publish-overlay
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../images/overlay-1x1.png);
+	z-index: 100;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#publish-overlay > div
+{
+	width: 100%;
+	height: 100%;	
+	display:table-cell;
+	vertical-align: middle;
+}
+
+#publish-overlay > div > div
+{
+	margin: auto;
+	padding: 30px 20px 0 20px;
+	width: 350px;
+	background: white;
+}
+
+#publish-overlay h2
+{
+	font-size: 25px;	
+}
+
+#publish-overlay h2, #publish-overlay p
+{
+	text-align: center;
+}
+
+#publish-overlay p
+{
+	font-size: 14px;
+	margin: 20px auto;
+	width: 160px;
+}
+
+#publish-overlay a
+{
+    display: block;
+    height: 42px;
+    text-decoration: none;
+    width: 126px;
+	float:right;
+}
+
+#publish-overlay a.confirm
+{
+	background: url("../images/confirm-app.png");
+	margin-left: 10px;
+}
+
+#publish-overlay a.cancel
+{
+	background: url("../images/cancel-button.png");
+}
+
+#publish-overlay div.buttons
+{
+	width: 100%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+#publish-overlay a span
+{
+	   color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 17px;
+    padding-top: 13px;
+    text-align: center;
+    width: 100px;
+}
+
+#publish-overlay div.links
+{
+	margin: auto;
+}
+
+#browser
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../images/overlay.png);
+	z-index: 100;
+	top: 0;
+	left: 0;
+	color: white;
+	font-size: 40px;
+	padding: 200px 0 0 100px;
+	display: none;
+}
+
+#browser ul
+{
+	margin: 20px;
+	list-style-type: dis;
+}
+
+#browser a
+{
+	color: white;
+}
+
+
+#publish-overlay, div#browser, div#login, div#header, div#footer, div#new, div#main
+{
+	font-family: 'Myriad Pro', 'Helvetica Neue', sans-serif;	
+}
+
+div#iphone
+{
+	font-family: 'Helvetica Neue', Helvetica, serif;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size: 19px;
+	font-weight: bold;
+}
+
+#overlay
+{
+	background: url(../images/overlay.png);
+	width:321px;
+	height: 483px;
+	top: 132px;
+	left: 40px;
+	z-index: 42;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	position: absolute;
+}
+
+#splashscreen-overlay
+{
+	width:321px;
+	height: 483px;
+	top: 135px;
+	left: 41px;
+	z-index: 42;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	position: absolute;
+	display: none;
+}
+
+#splashscreen-overlay > img
+{
+	width: 320px;
+	height: 480px;
+}
+
+#background
+{
+	width: 320px;
+	height: 480px;
+	top: 135px;
+	left: 41px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	position: absolute;
+}
+
+#status
+{
+	background: url(../images/iphone-status-bar.png);
+	width: 320px;
+	height: 20px;
+	top: 115px;
+	left: 41px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	position: absolute;
+}
+
+#navigationBar
+{
+	width:320px;
+	height: 47px;
+	top: 135px;
+	left: 41px;
+	background-repeat: repeat-x;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	position: absolute;
+}
+
+#overlay .white-spinner
+{
+	position: relative;
+	width: 32px;
+	height: 32px;
+	background: url(../images/white-spinner.gif);
+	left: 144px;
+	top: 225px;
+}
+
+#glare, #applicationLogo, #tabs, .iOSScroll
+{
+	position: absolute;
+}
+
+.image
+{
+	overflow: hidden;
+	display: none;
+}
+
+.image, .image img
+{
+	width: 96px;
+	height: 96px;
+}
+
+div#main, div#header
+{
+	width: 990px;
+	margin: auto;
+	clear: both;
+}
+
+div#header > a
+{
+	display:block;
+	width: 318px;
+	height: 96px;
+	background: url(../images/ibiz-logo.png) no-repeat;
+	float: left;
+}
+
+ul#select-lang
+{
+	width: 164px;
+	height: 29px;
+	background: url(../images/app-lang-bg.png);
+	float: right;
+	margin-top: 10px;
+}
+
+ul#select-lang li
+{
+	float: left;
+}
+
+ul#select-lang li:first-child
+{
+	color: white;
+	font-size: 10px;
+	margin: 9px 12px 0 15px;
+}
+
+a#app-en
+{
+	padding: 12px 0 0 0;
+	margin-left: 10px;
+}
+
+a#app-th
+{
+	padding: 12px 0 0 9px;	
+}
+
+ul#customize-buttons > li.lang > ul > li > a
+{
+	padding: 25px 0 0 62px;
+}
+
+a#app-en, a#app-th, ul#customize-buttons > li.lang > ul > li > a
+{
+	display: block;
+	width: 23px;
+	height: 17px;
+}
+
+a#app-en, a#lang-en
+{
+	background: url(../images/en-flag.png) center no-repeat;
+}
+
+a#app-en, a#lang-en
+{
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+a#app-en.selected, a#lang-en.selected
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a#app-th, a#lang-th
+{
+	background: url(../images/th-flag.png) center no-repeat;
+}
+
+.blue_span
+{
+	color: #20b0ed;
+}
+
+div#main
+{
+	background: #d2d2d2 url(../images/main-bg.png);
+}
+
+div#login
+{
+	width: 300px;
+	margin-left: 20px;
+	float: left;
+}
+
+div#login h1
+{
+	font-size: 19px;
+	color: #333333;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background: url(../images/line.png) left bottom no-repeat;
+}
+
+div#login h2
+{
+	color: #20b0ed;
+	background: white;
+	padding: 15px 10px 0 10px;
+}
+
+div#apps h2, div#users h2
+{
+	width: 240px;
+	margin: auto;
+	color: #333333;
+	padding: 10px 0 15px 0;
+	background: url(../images/line-240.png) left bottom no-repeat;
+}
+
+div#login p
+{
+	background: white;
+	font-size: 16px;
+	padding: 5px 10px 10px 10px;	
+	color: #333333;
+}
+
+div#register
+{
+	background: white url(../images/login-bottom-bg.png) left bottom no-repeat;
+	padding-bottom: 20px;
+}
+
+div#register > a
+{
+	display: block;
+	width: 267px;
+	height: 52px;
+	background: url(../images/button-register-th.png) no-repeat;
+	margin: 5px auto;
+}
+
+div#login form
+{
+	margin-top: -42px;
+	position: relative;
+}
+
+div#login fieldset
+{
+	background: #5e5e5e url(../images/footer-bg.png);
+	color: white;
+	font-size: 13px;
+}
+
+div#login fieldset legend
+{
+	color: white;
+	font-size: 19px;
+	padding: 57px 0 10px 10px;
+	margin-bottom: 10px;
+}
+
+div#login label
+{
+	display: block;
+	margin: 10px;
+	width: 270px;
+	height: 25px;
+	padding: 0 10px 0 0;
+}
+
+div#login label.error
+{
+	background: url(../images/error.png) right center no-repeat;
+}
+
+div#login div.NFTextCenter, div#login input.NFText
+{
+	width: 175px;
+}
+div#login input
+{
+/*	margin-top: -6px;
+	float: right;
+*/}
+
+div#login div.spinner
+{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(../images/white-spinner-darkgrey-bg.gif) no-repeat;
+	top: 54px;
+	left: 130px;
+	display: none;
+}
+
+div#login input#login-button
+{
+	width: 62px;
+}
+
+div#login input.login
+{
+	float: left;
+	clear: both;
+	margin: 10px;
+	width: 62px;
+}
+
+#showcase
+{
+	width: 635px;
+	height: 608px;
+	background: url(../images/showcase.png);
+	float: left;
+	margin-top: -117px;
+}
+
+#appstore
+{
+	display: block;
+	width: 135px;
+	height: 44px;
+	background: url(../images/appstore.png);
+	margin: 15px 0;
+}
+
+div#user-header
+{
+	width: 962px;
+	margin: 20px auto;
+	height: 40px;
+	padding-top: 15px;
+	background: url(../images/line-950.png) bottom left no-repeat;
+}
+
+div#user-header h2
+{
+	float: left;
+	margin-top: 5px;
+}
+
+div#user-header ul
+{
+	float: right;
+}
+
+div#user-header ul li
+{
+	float: left;
+	height: 22px;
+	padding-top: 10px;	
+}
+
+div#user-header ul li.welcome
+{
+	font-weight: bold;
+	color: #20b0ed;
+	padding-left: 10px;
+	background: url(../images/welcome-bg.png) no-repeat;
+}
+
+div#user-header ul li.member
+{
+	font-weight: bold;
+	color: #666;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 19px;
+	background: white url(../images/sep.png) right center no-repeat;	
+}
+
+div#user-header ul li.edit-profile
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	background: url(../images/profile-bg.png) no-repeat;		
+}
+
+div#user-header ul li.edit-profile a
+{
+	color: #666;
+	text-decoration: none;
+	display: block;
+	height: 30px;
+}
+
+div#user-header ul li.logout
+{
+	margin-left: 10px;
+	padding: 0;
+}
+
+div#user-header ul li.logout a
+{
+	display: block;
+	width: 72px;
+	height: 29px;
+	padding: 9px 0 0 12px;
+	background: url(../images/logout.png) no-repeat;
+	color: white;
+	text-decoration: none;
+}
+
+div#container
+{
+	position: relative;
+	clear: both;
+	background: white;
+	width: 960px;
+	min-height: 840px;
+	margin: 0 15px;
+}
+
+div#footer
+{
+	clear: both;
+	height: 70px;
+	background: #5e5e5e url(../images/footer-bg.png);
+}
+
+div#footer > p
+{
+	float: left;
+	margin: 28px 0 0 10px;
+	color: white;
+}
+
+div#footer > a
+{
+	margin: 19px 10px 0 0;
+	display: block;
+	width: 149px;
+	height: 32px;
+	background: url(../images/th-logo.png) no-repeat;
+	float: right;
+}
+
+div#users ul
+{
+	margin: 20px;
+	list-style-type: disc;
+}
+
+div#apps, div#users
+{
+	width: 280px;
+	background: url(../images/main-bg.png);
+	padding: 5px;
+	margin: 20px 0 20px 20px;
+}
+
+div#apps
+{
+	min-height: 300px;	
+}
+
+div#apps > ul > li:hover a.delete
+{
+	display: block;
+}
+
+div#apps hr, div#users hr
+{
+	width: 240px;
+	height: 2px;
+	background: url(../images/line-240.png) top left no-repeat;
+	margin: auto;
+	border: 0;
+}
+
+a#apps-next, a#apps-prev
+{
+	float: left;
+	display: block;
+	width: 30px;
+	height: 28px;
+	margin: 10px 0 0 5px;
+}
+
+a#apps-next
+{
+	background: url(../images/forward-button.png);
+}
+
+a#apps-prev
+{
+	background: url(../images/backward-button.png);
+}
+
+/*
+	Old preview : iPhone w/ splashscreen
+div#apps div.preview
+{
+	margin: 12px 5px 5px 7px;
+	background-size: 51px 76px;
+	background-position: 5px 21px;
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 117px;
+	float: left;
+}
+*/
+
+div#apps div.preview
+{
+	margin: 12px 5px 5px 7px;
+	width: 60px;
+	height: 117px;
+	float: left;
+	position: relative;
+}
+
+div#apps div.preview img
+{
+	width: 57px;
+	height: 57px;
+}
+
+div.preview .progressBar
+{
+    height: 8px;
+    left: 9px;
+    position: absolute;
+    top: 40px;
+    width: 40px;
+}
+
+div#apps div.preview div.file_upload
+{
+	width: 57px;
+	height: 57px;
+	background: url(../images/shine.png);
+	overflow:hidden;
+}
+
+
+div#apps div.app-text
+{
+	padding: 15px 5px 10px 5px;
+	width: 165px;
+	float: left;
+}
+
+div#apps div.app-text a.delete
+{
+	display: none;
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin-top: -5px;
+	background: url(../images/delete.png);
+}
+
+div#apps dl.app-infos
+{
+	width: 170px;
+}
+
+div#apps dl.app-infos dt a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+div#apps dl.app-infos dt
+{
+	margin-bottom: 7px;	
+}
+
+div#apps dl.app-infos dd
+{
+	font-size: 11px;
+}
+
+div#apps dl.app-infos span
+{
+	display: block;
+	float: left;
+	width: 50px;
+}
+
+div#apps dl.app-status
+{
+	margin-top: 10px;
+	width: 159px;
+	height: 64px;
+	background: url(../images/status.png) bottom left no-repeat;
+}
+
+div#apps dl.app-status dt
+{
+	font-size: 11px;
+	font-weight: bold;
+}
+
+div#apps dl.app-status > dd
+{
+	color: white;
+	font-size: 11px;
+	padding: 10px 0 0 10px;
+}
+
+div#apps dl.app-status > dd > ul
+{
+	width: 163px;
+	height: 10px;
+	margin: 2px 0 0 2px;
+	background: url(../images/status-bar.png) top left no-repeat;
+}
+
+div#apps dl.app-status > dd > ul li
+{
+	float: left;
+	position: relative;
+}
+
+div#apps dl.app-status > dd > ul li:hover span
+{
+	display: block;
+}
+
+div#apps dl.app-status > dd > ul li span
+{
+	position: absolute;
+	display: none;
+	top: 10px;
+	left: -26px;
+	width: 79px;
+	height: 32px;
+	color: black;
+	padding: 40px 0 0 15px;
+	font-size: 14px;
+	background: url(../images/baloon.png);
+}
+
+div#apps dl.app-status > dd > ul li a
+{
+	display: block;
+	width: 32px;
+	height: 12px;
+	background: url(../images/status-future-step.png) top left no-repeat;
+}
+
+div#apps dl.app-status > dd > ul li a.done
+{
+	background: url(../images/status-past-step.png) top left no-repeat;
+}
+
+div#apps > ul
+{
+	width: 250px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+div#apps > ul > li
+{
+	background: white;
+	margin: 10px 0;
+	height: 140px;
+}
+
+div#apps > ul > li.loading
+{
+	height : 40px;
+	background: url('../images/white-spinner-grey-bg.gif') center top no-repeat;
+}
+
+div#apps ul li a.en, div#apps ul li a.th
+{
+	display: none;
+}
+
+div#apps ul li a.en
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a#by_thaihosting, a#new_app
+{
+	display: block;
+	width: 258px;
+	height: 38px;
+	margin: 5px auto;
+	padding: 25px 0 0 20px;
+	background: url(../images/create.png);
+	text-decoration: none;
+}
+
+/*Add later*/
+a#by_thaihosting
+{
+	display: none;
+}
+
+a#by_thaihosting > span, a#new_app > span
+{
+	font-size: 17px;
+	color: white;
+	padding-right: 20px;
+	background: url(../images/blue-button-disclosure.png) right center no-repeat;
+}
+
+h1#page-title
+{
+	float: left;
+	padding: 5px;
+	margin: 15px 0 0 10px;
+	width: 610px;
+	min-height: 300px;
+}
+
+ul#customize-buttons
+{
+	position: absolute;
+	top: 65px;
+	right: 20px;
+	display: none;
+}
+
+ul#customize-buttons > li.lang > ul > li.selected
+{
+	background: url(../images/lang-right.png);	
+}
+
+ul#customize-buttons > li.lang > ul > li:first-child.selected
+{
+	background: url(../images/lang-left.png);
+}
+
+ul#customize-buttons > li.lang > ul > li
+{
+	width: 86px;
+	height: 42px;
+}
+
+ul#customize-buttons > li.lang > ul > li:first-child
+{
+	width: 85px;
+}
+
+ul#customize-buttons > li
+{
+	margin-top: 10px;
+}
+ul#customize-buttons > li > a, ul#customize-buttons > li.lang
+{
+	display: block;
+	width: 171px;
+	height: 42px;
+	background: url(../images/grey-button.png);
+	text-decoration: none;
+}
+
+ul#customize-buttons li.back a span
+{
+	background: url(../images/right-arrow.png) 10px center no-repeat;
+}
+
+ul#customize-buttons li.tutorial a span
+{
+	background: url(../images/icon-tutorial.png) 10px center no-repeat;
+}
+
+ul#customize-buttons li a span
+{
+	display: block;
+	height: 29px;
+	color: white;
+	font-size: 17px;
+	padding: 14px 0 0 30px;
+	cursor: pointer;
+}
+
+ul#customize-buttons > li.lang > ul > li
+{
+	float: left;
+}
+
+
+/*div#new h1
+{
+	margin: 15px 0 0 0;
+}
+
+div#new ul
+{
+	margin: 10px;
+	list-style-type: disc;
+}
+
+div#new ul > li
+{
+	margin-left: 10px;
+}
+*/
+
+div#iphone
+{
+	display: none;
+	left: 320px;
+	top: 70px;
+	width: 398px;
+	height: 750px;
+	background-image: url('../images/iphoneBackground.png');
+	position:relative;
+}
+
+div#logo
+{
+	width: 301px;
+	height: 96px;
+	background: url(../images/ThLogo.png) no-repeat;
+	padding: 55px 0 0 83px;
+	font-size: 20px;
+}
+
+div#glare
+{
+	top: 132px;
+	left: 230px;
+	background: url(../images/glare.png);
+	width:132px;
+	height:391px;
+}
+
+#applicationLogo
+{
+	top: 135px;
+	left: 110px;
+	z-index: 42;
+	width: 182px;
+	height: 80px;
+	background-image: url(../images/dropBackgroundSmall.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 80px;
+	position: relative;
+}
+
+#applicationLogo div.image
+{
+	position: absolute;
+	width: 182px;
+	height: 80px;
+	overflow: hidden;
+}
+
+#applicationLogo div.image img
+{
+	display: block;
+	margin: auto;
+	width: auto;
+	max-width: 182px;
+	height: 80px;
+}
+
+#applicationLogo > div.delete
+{
+	display: none;
+	position: absolute;
+	width: 182px;
+	height: 80px;
+	background: url(../images/overlay.png);
+}
+
+#applicationLogo > div.delete > a
+{
+	display: block;
+	float: right;
+	margin: 5px 5px 0 0;
+	width: 25px;
+	height: 25px;
+	background: url(../images/delete.png);	
+}
+
+#applicationLogo > form.upload,
+dl.item form.upload,
+dd form.upload,
+#fileUpload form.upload,
+#applicationSplashscreen form.upload,
+#applicationBackground form.upload,
+form.upload
+{
+	position: relative;
+	display: block;
+}
+
+#applicationLogo > form.upload > label,
+dl.item form.upload > label,
+dd form.upload > label,
+#fileUpload form.upload > label,
+#applicationSplashscreen form.upload > label,
+#applicationBackground form.upload > label,
+form.upload > label
+{
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 80px;
+  	height: 80px;
+}
+
+#applicationSplashscreen form.upload > label,
+#applicationBackground form.upload > label,
+form.upload > label
+{
+ 	height: 193px;
+    top: 34px;
+    width: 152px;
+}
+
+div.preview form.upload > label
+{
+	top: 0;
+}
+
+#applicationLogo > form.upload > label > input,
+dl.item form.upload > label > input,
+dd form.upload > label > input,
+form.upload > label > input,
+#fileUpload form.upload > label > input,
+#applicationSplashscreen form.upload > label > input,
+#applicationBackground form.upload > label > input
+{
+	-moz-transform: translate(-300px, 0) scale(4);
+	transform: translate(-300px, 0) scale(4);
+	margin: 0;
+	cursor: pointer;
+	display: block;
+	height: 100%;
+	opacity: 0;
+}
+
+.photoDetails form.upload > label
+{
+	width: 290px;
+}
+
+.photoDetails form.upload > label > input
+{
+	-moz-transform: translate(-260px, 0pt) scale(4);
+	transform: translate(-260px, 0pt) scale(4);
+}
+
+form.upload button
+{
+	display: none;
+}
+
+.ui-progressbar-value
+{
+	background-image: url(../images/pbar-ani.gif);
+}
+
+#backButton
+{
+	position: absolute;
+	top: 140px;
+	z-index: 42;
+	left: 50px;
+	width: 49px;
+	height: 30px;
+}
+
+#backButton > a
+{
+    color: white;
+    display: block;
+    font-size: 12px;
+    left: 14px;
+    position: relative;
+    text-decoration: none;
+    top: 8px;
+}
+
+#map {
+  border: 1px solid #DDD; 
+  width:288px;
+  height: 200px;
+  float:left;  
+  margin: 5px 0 0 4px;
+  -webkit-box-shadow: #AAA 0px 0px 15px;
+}
+
+/*
+	Tab Bar
+*/
+ul#tabs
+{
+	list-style-type: none;
+	bottom: 135px;
+	left: 41px;
+	padding-top: 3px;
+	width: 320px;
+	height: 40px;
+	overflow: hidden;
+}
+
+ul#tabs > li
+{
+	float: left;
+	width: 60px;
+	margin: 0 2px;
+}
+
+ul#tabs > li a
+{
+	display: block;
+	width: 100%;
+	height: 39px;
+	background-position: center 2px;
+	background-repeat: no-repeat;
+}
+
+#aboutTab
+{
+/*	margin-left: 1px;*/
+}
+
+#promotionTab
+{
+/*	width: 64px;*/
+}
+
+ul#tabs > li a
+{
+	color: white;
+	text-decoration: none;
+}
+
+ul#tabs > li a > span
+{
+	display: block;
+	font-size: 10px;
+	padding-top: 29px;
+	text-align: center;
+	width: 100%;
+}
+
+/*
+	App Definition List
+ */
+
+dl.appDl
+{
+	width: 300px;
+	margin: 40px 0 0 11px;
+}
+
+dl.appDl > dd
+{
+	margin: 0;
+}
+
+dl.appDl > dd.last
+{
+	height: 14px;
+}
+
+dl.appDl > dt
+{
+	height: 50px;
+}
+
+dl.appDl > dt span.sq, dl.appDl > dt span.title
+{
+	display: block;
+	float: left;
+	margin-top: 7px;
+}
+
+dl.appDl > dt span.sq > span
+{
+	display: block;
+	margin: 5px 0 0 5px;
+	width: 30px;
+	height: 30px;
+}
+
+dl.appDl > dt span.sq
+{
+	width: 40px;
+	height: 40px;
+	margin-left: 9px;
+	background-repeat: no-repeat;
+}
+
+dl.appDl > dt span.title
+{
+	width: 200px;
+	padding: 10px 0 0 10px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+dl.appDl > dt a
+{
+	display: block;
+	height: 50px;
+	text-decoration: none;
+}
+
+form#register
+{
+	background: #5e5e5e url(../images/footer-bg.png);
+	margin: 15px;
+	width: 960px;
+	color: white;
+}
+
+form#register fieldset
+{
+	float: left;
+	margin: 15px 0 15px 20px;
+}
+
+form#register fieldset legend, form#register fieldset legend span
+{
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+form#register fieldset#login-infos legend, form#register fieldset#login-infos legend span
+{
+	margin-bottom: 12px;
+}
+
+form#register label
+{
+	padding-right: 15px;
+}
+
+form#register label.required
+{
+	background: url(../images/required.png) center right no-repeat;
+}
+
+form#register label.required.error,
+form#register label.error
+{
+	background: url(../images/error.png) center right no-repeat;	
+}
+
+form#register fieldset#login-infos label.required.error,
+{
+	background: url(../images/error.png) right 8px no-repeat;	
+}
+
+form#register fieldset#login-infos label.required
+{
+	background: url(../images/required.png) right 8px no-repeat;	
+}
+
+form#register span
+{
+	font-size: 14px;
+}
+
+form#register fieldset#personal-infos
+{
+	width: 560px;
+/*	background: green;*/
+}
+
+form#register fieldset#personal-infos label
+{
+	width: 545px;
+	display: block;
+	margin: 0 0 5px 0;
+	height: 27px;
+	clear: both;
+/*	background: red;*/
+}
+
+form#register fieldset#personal-infos .NFTextCenter,
+form#register fieldset#personal-infos .NFTextCenter input
+{
+	width: 405px;
+}
+
+form#register fieldset#login-infos .NFTextCenter,
+form#register fieldset#login-infos .NFTextCenter input
+{
+	width: 160px;
+}
+
+
+form#register fieldset#personal-infos label#form-phone .NFTextCenter,
+form#register fieldset#personal-infos label#form-phone .NFTextCenter input
+{
+	width: 200px;
+}
+
+form#register fieldset#personal-infos label#form-ext .NFTextCenter,
+form#register fieldset#personal-infos label#form-ext .NFTextCenter input
+{
+	width: 130px;
+}
+
+form#register fieldset#personal-infos label.textarea
+{
+	height: auto;
+	margin: 0 0 10px 0;
+}
+
+form#register fieldset#personal-infos label > span
+{
+	display: block;
+	width: 120px;
+	float: left;
+	padding-top: 8px;
+}
+
+form#register fieldset#personal-infos label > input,
+form#register fieldset#personal-infos label > textarea
+{
+	width: 419px;
+}
+
+form#register fieldset#personal-infos label > textarea
+{
+	height: 100px;
+}
+
+form#register label.textarea > span
+{
+	margin-top: 12px;
+}
+
+form#register fieldset#personal-infos label#form-phone,
+form#register fieldset#personal-infos label#form-ext
+{
+	float: left;
+	clear: none;
+}
+
+form#register fieldset#personal-infos label#form-phone
+{
+	width: 335px;
+}
+
+form#register fieldset#personal-infos label#form-ext
+{
+	width: 195px;	
+}
+
+form#register fieldset#personal-infos label#form-phone > input
+{
+	width: 205px;
+}
+
+form#register fieldset#personal-infos label#form-ext > input
+{
+	width: 143px;
+}
+
+form#register fieldset#personal-infos label#form-ext > span
+{
+	width: 35px;
+	margin-left: 10px;
+}
+
+form#register fieldset#login-infos
+{
+	width: 340px;
+}
+
+form#register fieldset#login-infos > label
+{
+	width: 322px;
+	height: 35px;
+	display: block;
+	clear: both;
+}
+
+form#register fieldset#login-infos > label > span,
+form#register fieldset#login-infos > label > input
+{
+	float: left;	
+	margin-top: 0;
+}
+
+form#register fieldset#login-infos > label > span
+{
+	display: block;
+	padding-top: 8px;
+	width: 145px;
+}
+
+form#register fieldset#login-infos > label > input
+{
+	width: 170px;
+}
+
+form#register textarea#register-conditions
+{
+	margin-top: 15px;
+	width: 320px;
+	height: 100px;
+}
+
+form#register fieldset#login-infos label#register-checkbox
+{
+	padding-top: 20px;
+	background: url(../images/required.png) 137px 27px no-repeat;	
+}
+
+form#register fieldset#login-infos label#register-checkbox.required.error
+{
+	background: url(../images/error.png) 137px 27px no-repeat;	
+}
+
+form#register fieldset#login-infos label#register-checkbox > input
+{
+	margin: 6px 10px 0 0;
+	width: auto;
+}
+
+form#register fieldset#login-infos label#register-checkbox > span
+{
+	width: auto;
+}
+
+form#register > div
+{
+	background: url(../images/dark-grid-bg.png);
+	clear: both;
+	width: 920px;
+	padding: 20px 20px 30px 20px;
+}
+
+form#register > div > p
+{
+	float: left;
+}
+
+form#register > div > p
+{
+	width: 830px;
+}
+
+/*
+	iOS Scroll (appDL Container)
+ */
+
+.iOSScroll
+{
+	width:320px;
+	height: 390px;
+	top: 182px;
+	left: 41px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.iOSScroll:hover
+{
+	overflow-y: scroll;
+}
+
+/*
+	Scrollbar
+	@see http://journal.sumitpaul.com/post/2972616091/a-custom-webkit-scrollbar-makes-sense
+*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width: 1024px)
+{
+	html
+	{
+		overflow-y: auto;
+		background-color: transparent;
+	}
+	body
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 10px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+}
+
+.iOSScroll::-webkit-scrollbar
+{
+	width: 8px;
+	height: 10px;
+}
+
+.iOSScroll::-webkit-scrollbar-button:start:decrement
+{
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: transparent;
+}
+
+.iOSScroll::-webkit-scrollbar-button:end:increment
+{
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: transparent;
+}
+
+.iOSScroll::-webkit-scrollbar-track:enabled
+{
+	background-color: transparent;
+}
+
+.iOSScroll::-webkit-scrollbar-track-piece
+{
+	background-color: transparent;
+	border: none; margin: 8px 0 8px 0;
+}
+
+.iOSScroll::-webkit-scrollbar-thumb:vertical
+{
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 1px rgba(255,255,255,0.2)
+}
+
+.iOSScroll::-webkit-scrollbar-thumb:horizontal
+{
+	width: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 5px;
+}

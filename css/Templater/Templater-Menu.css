@@ -1,0 +1,123 @@
+#menu > dl > dd.menuItem, .menuDetails > dl > dd.menuItem
+{
+	height: 96px;
+}
+
+#menu dl.item dt.file_upload
+{
+	position: relative;
+}
+
+#menu dl.item dt.file_upload .progressBar
+{
+	position: absolute;
+	top: 52px;
+	left: 28px;
+	width: 40px;
+	height: 8px;
+}
+
+.menuItem .progressBar
+{
+	position: absolute;
+	width: 40px;
+	height: 8px;
+	top: 52px;
+	left: 28px;
+}
+
+dl.item
+{
+	height: 96px;
+	width: 290px;
+	clear: both;
+	margin: 0 0 0 4px;
+}
+
+dl.item > dt
+{
+	width: 96px;
+	height: 96px;
+	background: url(../images/dropBackground92.png) no-repeat;
+	float: left;
+	position: relative;
+}
+
+dl.item > dd
+{
+	font-weight: bold;
+	font-size: 15px;
+	width: 149px;
+	overflow: hidden;
+	margin: 6px 0 0 5px;
+	float: left;
+	height: 80px;
+}
+
+dd.section > dl
+{
+	background: url(../images/dd.png) repeat-y;
+}
+
+dd.section > dl > dt
+{
+	border-top: 1px solid #ccc;
+	width: 280px;
+	height: 27px;
+	margin-left: 4px;
+	padding: 10px 0 0 10px;
+	font-weight: bold;
+	font-size: 17px;
+	position: relative;
+}
+
+dl.item > dd.delete
+{
+	height: 25px;
+	margin: 5px 5px 0 0;
+	width: 25px;
+}
+
+dl.item > dd.delete a, dd.section dt > a.delete
+{
+	width: 25px;
+	height: 25px;
+	background: url(../images/delete.png);
+	float: left;
+	display: none;
+}
+
+dd.section dt > a.delete
+{
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+dl.item:hover > dd.delete a, dd.section dt:hover > a.delete
+{
+	display: block;
+}
+
+.editableItem:hover, .editableArea:hover
+{
+	text-shadow: 0 0 10px #fefcca, 
+				 0 0 20px #fefcca, 
+				 0 0 30px #fefcca, 
+				 0 0 40px #fefcca, 
+				 0 0 70px #fefcca;
+}
+
+/*#menu dl > dd span.menuDrop
+{
+	display: block;
+	width: 96px;
+	background: green;
+}
+
+#menu dl > dd span.menuItem
+{
+	width: 194px;
+}
+
+*/

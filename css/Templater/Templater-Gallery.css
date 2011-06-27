@@ -1,0 +1,107 @@
+#gallery > dl.appDl dd
+{
+	padding-left: 4px;
+}
+
+#fileUpload
+{
+	position: relative;
+}
+
+#fileUpload .progressBar
+{
+	position: absolute;
+	top: 52px;
+	left: 28px;
+	width: 40px;
+	height: 8px;
+}
+
+#gallery table
+{
+	width: 290px;
+}
+
+#gallery table tr
+{
+	height: 96px;
+}
+
+#gallery table td
+{
+	width: 96px;
+}
+
+#fileUpload
+{
+	width: 96px;
+	height: 96px;
+	background: url(../images/dropBackground92.png) no-repeat;
+}
+
+#gallery table td.image2
+{
+	position: relative;
+}
+
+#gallery table td.image2 div.delete
+{
+	display: none;
+	position: absolute;
+	background: url(../images/overlay.png);
+}
+
+#gallery table td.image2 div.delete > a
+{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/delete.png);
+	float: right;
+	margin: 5px 5px 0 0;
+}
+
+#gallery table td.image2, #gallery table td.image2 img, #gallery table td.image2 div.delete
+{
+	width: 96px;
+	height: 96px;
+}
+
+#gallery table td.image2 img
+{
+	overflow: hidden;
+	display: block;
+}
+
+.photoDetails .photo_upload
+{
+	width: 320px;
+	min-height: 390px;
+}
+
+.photoDetails .span_upload
+{
+	display: block;
+	margin-top: 100px;
+	width: 320px;
+	height: 162px;
+	background-image: url(../images/dropBackground.png);
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.photoDetails .photo_upload > img
+{
+	position: absolute;
+	top: 0;
+	width: 320px;
+}
+
+.photoDetails .span_upload .progressBar
+{
+	position: absolute;
+	width: 66px;
+	height: 8px;
+	top: 116px;
+	left: 118px;
+}

@@ -1,0 +1,53 @@
+
+body
+{
+	background: none;
+}
+
+#header, #user-header, #showcase, #footer, #appstore, #page-title,
+#create, .next-step, #container > div:first-child
+{
+	display: none !important;
+}
+
+div#main
+{
+	width: auto;
+}
+
+div#login
+{
+	margin: 0;
+	width: 100%;
+}
+
+div#login form
+{
+	margin-top: -53px;
+}
+
+div#register > a
+{
+	margin: 0 0 0 25px
+}
+
+div#main
+{
+	background: none
+}
+
+div#container
+{
+	width: auto;
+	height: auto;
+	min-height: 0;
+	margin: 0;
+}
+
+div#iphone
+{
+	position: absolute;
+	top: -135px;
+	left: -41px;
+	background:none;
+}
